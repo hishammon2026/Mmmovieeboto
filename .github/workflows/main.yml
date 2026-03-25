@@ -1,0 +1,29 @@
+name: GitHub-Actions-Bot-Deploy
+
+on:
+  push:
+    branches: [ DreamXBotz ] # നിന്റെ ബ്രാഞ്ച് പേര് ഇവിടെ മാറ്റിയിട്ടുണ്ട്
+  workflow_dispatch: # ഇത് കൊടുത്താലേ നിനക്ക് 'Run Workflow' ബട്ടൺ കാണാൻ പറ്റൂ
+  schedule:
+    - cron: '0 */6 * * *' # ഓരോ 6 മണിക്കൂർ കൂടുമ്പോഴും ബോട്ട് തനിയെ റിസ്റ്റാർട്ട് ആകും
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Running The Bot
+      run: python3 bot.py # നിന്റെ ഫയൽ പേര് bot.py ആയതുകൊണ്ട് ഇത് മതി
