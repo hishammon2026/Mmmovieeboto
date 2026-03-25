@@ -1,0 +1,29 @@
+name: GitHub-Actions-Bot-Deploy
+
+on:
+  push:
+    branches: [ DreamXBotz ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4 # v3-ന് പകരം v4 ആക്കി (Warning മാറാൻ)
+
+    - name: Setup Python
+      uses: actions/setup-python@v5 # v4-ന് പകരം v5 ആക്കി
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Running The Bot
+      run: python3 bot.py
