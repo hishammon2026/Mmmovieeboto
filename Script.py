@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """<b><u>🚩 സുഖമാണോ 🚩</u></b>
+    START_TXT = """<b><u>🚩 hey 👋 🚩</u></b>
 
 <b>ʜᴇʏ {}, {}</b>
 
@@ -224,7 +224,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/dreamxbotz">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/dreamxbotz">[ ᴅʀᴇᴀᴍxʙᴏᴛᴢ ]</a></b>"""
+    CAPTION = """<b><a href="https://t.me/HodyCloud">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/HodyCloud">[ HODY CLOUD ]</a></b>"""
 
     
     MOVIE_UPDATE_NOTIFY_TXT = """
