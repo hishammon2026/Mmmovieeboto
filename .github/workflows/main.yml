@@ -1,0 +1,37 @@
+name: GitHub-Actions-Bot-Deploy
+
+on:
+  push:
+    branches: [ DreamXBotz ]
+  workflow_dispatch:
+  schedule:
+    # ഓരോ 2 മണിക്കൂറിലും റൺ ചെയ്യാൻ
+    - cron: '0 */2 * * *'
+
+# ഒരേസമയം ഒന്നിലധികം ബോട്ട് റൺ ആകുന്നത് തടയാൻ
+concurrency:
+  group: bot-running
+  cancel-in-progress: true
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Running The Bot
+      # 115 മിനിറ്റ് (അടുത്ത ഷെഡ്യൂളിന് 5 മിനിറ്റ് മുൻപ് നിർത്താൻ)
+      timeout-minutes: 115
+      run: python3 bot.py
