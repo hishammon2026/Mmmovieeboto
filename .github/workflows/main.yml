@@ -5,8 +5,8 @@ on:
     branches: [ DreamXBotz ]
   workflow_dispatch:
   schedule:
-    # ഓരോ 2 മണിക്കൂറിലും റൺ ചെയ്യാൻ
-    - cron: '0 */2 * * *'
+    # ഓരോ 15 മിനിറ്റിലും ബോട്ട് ചെക്ക് ചെയ്യാനും റൺ ചെയ്യാനും
+    - cron: '*/15 * * * *'
 
 # ഒരേസമയം ഒന്നിലധികം ബോട്ട് റൺ ആകുന്നത് തടയാൻ
 concurrency:
@@ -32,6 +32,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Running The Bot
-      # 115 മിനിറ്റ് (അടുത്ത ഷെഡ്യൂളിന് 5 മിനിറ്റ് മുൻപ് നിർത്താൻ)
-      timeout-minutes: 115
+      # 14 മിനിറ്റ് (അടുത്ത ഷെഡ്യൂളിന് മുൻപ് കൃത്യമായി നിർത്താൻ)
+      timeout-minutes: 14
       run: python3 bot.py
