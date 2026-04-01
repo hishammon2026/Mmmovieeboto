@@ -188,9 +188,9 @@ async def next_page(bot, query):
         btn.insert(0,
                    [
                        InlineKeyboardButton(
-                           "ʀᴇᴍᴏᴠᴇ ᴀᴅs", url=f"https://t.me/{temp.U_NAME}?start=premium"),
+                           "OWNER🙃", url=f"https://t.me/hishammon"),
                        InlineKeyboardButton(
-                           "Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+                           "MOVIE GROUP", url=f"https://t.me/+ddiTlqQ3ac1kYTZl"
 
                    ]
                    )
