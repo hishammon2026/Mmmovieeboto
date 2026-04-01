@@ -189,8 +189,6 @@ async def next_page(bot, query):
                    [
                        InlineKeyboardButton(
                            "OWNER🙃", url=f"https://t.me/hishammon"),
-                       InlineKeyboardButton(
-                           "MOVIE GROUP", url=f"https://t.me/+ddiTlqQ3ac1kYTZl")
 
                    ]
                    )
@@ -209,8 +207,7 @@ async def next_page(bot, query):
                    )
         btn.insert(0, [
             InlineKeyboardButton(
-                "ʀᴇᴍᴏᴠᴇ ᴀᴅs", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+                "OWNER🙃", url=f"https://t.me/hishammon"),
         ])
     if ULTRA_FAST_MODE:
         if 0 < offset <= 10:
@@ -465,9 +462,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0,
                    [
                        InlineKeyboardButton(
-                           "ʀᴇᴍᴏᴠᴇ ᴀᴅs", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-                       InlineKeyboardButton(
-                           "Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+                           "OWNER🙃", url=f"https://t.me/hishammon") 
                    ])
     else:
         btn = []
@@ -484,9 +479,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0,
                    [
                        InlineKeyboardButton(
-                           "ʀᴇᴍᴏᴠᴇ ᴀᴅs", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-                       InlineKeyboardButton(
-                           "Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+                           "OWNER🙃", url=f"https://t.me/hishammon") 
 
                    ])
     if offset != "":
@@ -624,9 +617,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0,
                    [
                        InlineKeyboardButton(
-                           "ʀᴇᴍᴏᴠᴇ ᴀᴅs", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-                       InlineKeyboardButton(
-                           "Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+                           "OWNER🙃", url=f"https://t.me/hishammon") 
                    ]
                    )
     else:
@@ -643,9 +634,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0,
                    [
                        InlineKeyboardButton(
-                           "ʀᴇᴍᴏᴠᴇ ᴀᴅs", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-                       InlineKeyboardButton(
-                           "Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+                           "OWNER🙃", url=f"https://t.me/hishammon")
                    ])
     if offset != "":
         try:
@@ -779,8 +768,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         0,
         [
             InlineKeyboardButton(
-                "ʀᴇᴍᴏᴠᴇ ᴀᴅs", url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}"),
+                "OWNER🙃", url=f"https://t.me/hishammon"),
         ],
     )
     if n_offset != "":
