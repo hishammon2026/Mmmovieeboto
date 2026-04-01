@@ -190,7 +190,7 @@ async def next_page(bot, query):
                        InlineKeyboardButton(
                            "OWNER🙃", url=f"https://t.me/hishammon"),
                        InlineKeyboardButton(
-                           "MOVIE GROUP", url=f"https://t.me/+ddiTlqQ3ac1kYTZl"
+                           "MOVIE GROUP", url=f"https://t.me/+ddiTlqQ3ac1kYTZl")
 
                    ]
                    )
