@@ -224,7 +224,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/HodyCloud">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/HodyCloud">[ HODY CLOUD ]</a></b>"""
+    CAPTION = """<b><a href="https://t.me/hishammon">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/hishammon">[ OWNER🙃 ]</a></b>"""
 
     
     MOVIE_UPDATE_NOTIFY_TXT = """
